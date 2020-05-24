@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>Perle di Sole|주문페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        .mytext {
+            background-image: url('https://www.youdreamitaly.com/software/immagini/0000000015527_medium.jpg');
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .wrap {
+            width: 400px;
+            margin: 10px auto;
+        }
+
+
+        .buttonwrap {
+            margin: 0px 40px 0px 170px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 70%;
+        }
+    </style>
+
+    <script>
+        function thankyou() {
+            alert('주문이 완료되었습니다');
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="mytext">
+        </div>
+        <div>
+            <p>Lemon Flavored Candies Filled With Sparkling Powder <span class="price">가격: 1,000원/개</span>
+            </p>
+
+            <p>INGREDIENTS: sugar, glucose syrup, dextrose, acidifier: (E330), natural lemon flavor with other natural
+                flavors, coloring: E100.
+                GMO FREE. GLUTEN FREE. ALLERGEN FREE. NATURAL FLAVORS. NATURAL DYES. SUITABLE FOR HALAL.</p>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <p>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주문자 이름</span>
+                </div>
+                <input type="text" class="form-control" aria-label="주문자 이름"
+                    aria-describedby="inputGroup-sizing-default">
+            </p>
+        </div>
+
+
+
+        <p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" id="inputGroup-sizing-sm" for="inputGroupSelect01">수량</label>
+                </div>
+                <select class="custom-select" aria-describedby="inputGroup-sizing-sm" id="inputGroupSelect01"
+                    id="inputGroup-sizing-sm">
+                    <option selected>--수량을 선택하세요--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+        </p>
+
+
+
+        <div class="input-group mb-3">
+            <p>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="주소" aria-describedby="inputGroup-sizing-default">
+            </p>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <p>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="전화번호" aria-describedby="inputGroup-sizing-default">
+            </p>
+
+        </div>
+
+
+        <button onclick="thankyou()" type="button" class="btn btn-primary buttonwrap">주문하기</button>
+
+    </div>
+
+</body>
+
+</html>
